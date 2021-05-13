@@ -13,6 +13,8 @@ namespace {
     {
         return false;
     }
+    
+    function ddtrace_config_app_name(string $fallback): string {}
 }
 
 namespace DDTrace {
