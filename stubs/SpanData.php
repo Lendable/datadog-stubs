@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace DDTrace;
 
-final class SpanData
-{
-    public ?string $name;
+if (!class_exists('DDTrace\SpanData')) {
+    final class SpanData
+    {
+        public ?string $name;
+    }
 }
