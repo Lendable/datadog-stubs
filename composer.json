@@ -11,9 +11,6 @@
   "autoload":  {
     "files": [
       "stubs/functions.php"
-    ],
-    "psr-4": {
-      "DDTrace\\": "stubs/"
-    }
+    ]
   }
 }
