@@ -30,9 +30,18 @@ namespace DDTrace {
 
     if (!function_exists('DDTrace\trace_method')) {
         /**
-         * @phpstan-param \Closure(DDTrace\SpanData, list<mixed>=, mixed|null=, \Throwable|null=): void $tracingClosure
+         * @phpstan-param \Closure|array $tracingClosure
          */
-        function trace_method(string $className, string $methodName, \Closure $tracingClosure): void
+        function trace_method(string $className, string $methodName, $tracingClosure): void
+        {
+        }
+    }
+
+    if (!function_exists('DDTrace\trace_function')) {
+        /**
+         * @phpstan-param \Closure|array $tracingClosure
+         */
+        function trace_function(string $functionName, $tracingClosure): void
         {
         }
     }
