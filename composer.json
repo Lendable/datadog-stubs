@@ -6,7 +6,7 @@
     "php": ">=7.4.0"
   },
   "require-dev": {
-    "datadog/dd-trace": "^0.59.0"
+    "datadog/dd-trace": "^0.79.0"
   },
   "autoload":  {
     "files": [

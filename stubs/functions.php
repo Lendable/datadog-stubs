@@ -52,6 +52,16 @@ namespace DDTrace {
             return 0;
         }
     }
+
+    if (!function_exists('DDTrace\set_distributed_tracing_context')) {
+        /**
+         * @param array<string,string>|null $tags
+         */
+        function set_distributed_tracing_context(string $trace_id, string $parent_id, ?string $origin = null, ?array $tags = null): bool
+        {
+            return true;
+        }
+    }
 }
 
 namespace DDTrace\Bridge {

@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e742ec21b8a7c70f5de0375492bf2993",
+    "content-hash": "9bbd19c2c152a9dd7172711f45086be2",
     "packages": [],
     "packages-dev": [
         {
             "name": "datadog/dd-trace",
-            "version": "0.59.0",
+            "version": "v0.79.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DataDog/dd-trace-php.git",
-                "reference": "e9cf7479d479228cf20b0d462e395bf675eebbcb"
+                "reference": "77e083b943458707e9e464d0e957263caa43b089"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DataDog/dd-trace-php/zipball/e9cf7479d479228cf20b0d462e395bf675eebbcb",
-                "reference": "e9cf7479d479228cf20b0d462e395bf675eebbcb",
+                "url": "https://api.github.com/repos/DataDog/dd-trace-php/zipball/77e083b943458707e9e464d0e957263caa43b089",
+                "reference": "77e083b943458707e9e464d0e957263caa43b089",
                 "shasum": ""
             },
             "require": {
@@ -67,6 +67,9 @@
                 }
             },
             "autoload": {
+                "files": [
+                    "./src/api/bootstrap.composer.php"
+                ],
                 "psr-4": {
                     "DDTrace\\": "./src/api/"
                 }
@@ -94,9 +97,9 @@
             ],
             "support": {
                 "issues": "https://github.com/DataDog/dd-trace-php/issues",
-                "source": "https://github.com/DataDog/dd-trace-php/tree/0.59.0"
+                "source": "https://github.com/DataDog/dd-trace-php/tree/v0.79.0"
             },
-            "time": "2021-05-06T16:20:20+00:00"
+            "time": "2022-09-09T08:08:01+00:00"
         }
     ],
     "aliases": [],
@@ -108,5 +111,5 @@
         "php": ">=7.4.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
