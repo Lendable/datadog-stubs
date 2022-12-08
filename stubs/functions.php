@@ -24,6 +24,13 @@ namespace {
             return '';
         }
     }
+
+    if (!function_exists('ddtrace_config_trace_enabled')) {
+        function ddtrace_config_trace_enabled(): bool
+        {
+            return false;
+        }
+    }
 }
 
 namespace DDTrace {
@@ -63,13 +70,3 @@ namespace DDTrace {
         }
     }
 }
-
-namespace DDTrace\Bridge {
-    if (!function_exists('DDTrace\\Bridge\\dd_tracing_enabled')) {
-        function dd_tracing_enabled(): bool
-        {
-            return false;
-        }
-    }
-}
-
