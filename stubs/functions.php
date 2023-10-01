@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace {
 
     if (!function_exists('dd_trace_peek_span_id')) {
-        function dd_trace_peek_span_id(): int
+        function dd_trace_peek_span_id(): string
         {
-            return 0;
+            return '0';
         }
     }
 
@@ -54,9 +54,9 @@ namespace DDTrace {
     }
 
     if (!function_exists('DDTrace\trace_id')) {
-        function trace_id(): int
+        function trace_id(): string
         {
-            return 0;
+            return '0';
         }
     }
 
